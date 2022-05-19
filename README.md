@@ -13,7 +13,11 @@ In this project, 2 models have been created. The first model is created using th
 The primary reason is to cross-validate the results. Catboost is used for its ability to drastically reduce the error through gradient boosting and Random forest is used because it is appropriate when working with large data sets. Both the models have very low- MAE, MSE and RMSE.
 
 ### Model and Virtual Environment
-It is possible to run the models on a virtual machine by installing the required python3 libraries- NumPy, Catboost, Flask and Skitlearn
+It is possible to run the models on a virtual machine by installing the required python3 libraries- NumPy, Catboost, Flask and Skitlearn. Then, the following steps should be followed on VM.
+1. Create a GIT folder on VM
+2. Download folder from GitHub using command > python app.py
+3. To run the app, use 5444 as the port
+4. Select which model to run- 1 for the Random Forest and 2 for the catboost.
 
 
 
