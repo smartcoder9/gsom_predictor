@@ -98,7 +98,7 @@ Make a query by setting the values of the parameters as needed and start predict
 Just pull the app from docker [gsom_predictor](https://hub.docker.com/repository/docker/madiya20/gsom_predictor) using the following commands
 	
 	#pull the app
-	docker pull smartcoder9/gsom_predictor:v.0.2
+	docker pull smartcoder9/gsom_predictor:v.1.0
 
 	#run the app
 	docker run --network host -d smartcoder9/gsom_predictor:v.1.0
