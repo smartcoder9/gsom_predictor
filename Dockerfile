@@ -1,4 +1,4 @@
-MAINTAINER Jerome Lambert
+MAINTAINER Madiya Bano
 RUN apt-get update -y
 COPY . /opt/gsom_predictor
 WORKDIR /opt/gsom_predictor
