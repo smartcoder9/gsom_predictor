@@ -54,7 +54,7 @@ It is possible to run the models on a virtual machine by installing the required
 Docker is an application that makes it possible to run app and save its prototype on different devices. A Dockerfile should be downloaded. This file inlcudes the commands required to build a container and make a copy of the application. 
 
 ### How to use Docker
-To use docker, install and tune the application following the instructions here: install docker on ubuntu tune the docker on ubuntu
+To use docker, install and tune the application following the instructions here: [install docker on ubuntu tune the docker on ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
 1. To build a container, use the following command
 
@@ -81,3 +81,24 @@ Just download Docker application and use the following commnad, using the reposi
 	docker run --network host -d smartcoder9/gsom_predictor:v.1.0
 	
 Make a query by setting the values of the parameters as needed and start predicting!
+
+
+### Contents of my docker file 
+
+	MAINTAINER Madiya Bano
+	RUN apt-get update -y
+	COPY . /opt/gsom_predictor
+	WORKDIR /opt/gsom_predictor
+	RUN apt install -y python3-pip
+	RUN pip3 install -r requirements.txt
+	CMD python3 app.py
+	
+### Running an app using docker
+
+Just pull the app from docker [gsom_predictor](https://hub.docker.com/repository/docker/madiya20/gsom_predictor) using the following commands
+	
+	#pull the app
+	docker pull smartcoder9/gsom_predictor:v.0.2
+
+	#run the app
+	docker run --network host -d smartcoder9/gsom_predictor:v.1.0
